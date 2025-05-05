@@ -1,15 +1,18 @@
-.education {
-  background: var(--bg-color, #0d0d0d);
-  color: var(--text-color, #e0e0e0);
+.container {
+  padding: 2rem;
+  min-height: 80vh;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: center;
 }
 
 .heading {
-  animation: fadeIn 1.5s ease-in-out;
+  animation: rotateIn 1s ease-out;
 }
 
 .subHeading {
-  animation: fadeIn 2s ease-in-out;
-  margin-top: 2rem;
+  animation: rotateIn 1.5s ease-out;
+  margin: 2rem 0 1rem;
 }
 
 .skills {
@@ -17,25 +20,21 @@
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
-  margin-top: 1rem;
 }
 
 .skill {
-  background: #1a1a1a;
-  color: var(--highlight-color, #00e6e6);
+  background: var(--highlight-color);
+  color: var(--btn-text);
   padding: 0.5rem 1rem;
   border-radius: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  animation: fadeIn 2.5s ease-in-out;
+  animation: rotateIn 2s ease-out;
+  transition: transform 0.3s ease;
 }
 
 .skill:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 10px var(--highlight-color, #00e6e6);
+  transform: rotate(5deg);
 }
 
 @media (max-width: 768px) {
-  .education {
-    padding: 1rem;
-  }
+  .container { padding: 1rem; }
 }

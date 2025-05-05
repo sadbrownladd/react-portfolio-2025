@@ -1,9 +1,10 @@
 .footer {
-  background: var(--bg-color, #080808);
-  color: var(--text-color, white);
-  padding: 1rem;
+  background: var(--bg-color);
+  color: var(--text-color);
   text-align: center;
-  position: fixed;
+  padding: 1rem;
+  position: relative;
   bottom: 0;
   width: 100%;
+  animation: rotateIn 1s ease-out;
 }

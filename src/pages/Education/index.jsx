@@ -5,11 +5,11 @@ import CustomTable from '../../components/CustomTable';
 import styles from './Education.module.css';
 
 export default function Education() {
-  const { setTitle } = usePageTitle();
+  const { setPageTitle } = usePageTitle();
 
   useEffect(() => {
-    setTitle('Education');
-  }, [setTitle]);
+    setPageTitle('Education');
+  }, [setPageTitle]);
 
   const headers = ['Degree', 'Institution', 'Year'];
   const rows = [
@@ -21,17 +21,13 @@ export default function Education() {
   const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'Python'];
 
   return (
-    <Grid container spacing={2} className={styles.education} sx={{ padding: '2rem', minHeight: '100vh' }}>
-      <Grid>
-        <Typography variant="h4" align="center" gutterBottom className={styles.heading}>
+    <Grid container spacing={2} className={styles.container}>
+      <Grid item xs={12}>
+        <Typography variant="h4" align="center" className={styles.heading}>
           Education
         </Typography>
-      </Grid>
-      <Grid>
         <CustomTable headers={headers} rows={rows} />
-      </Grid>
-      <Grid>
-        <Typography variant="h5" align="center" gutterBottom className={styles.subHeading}>
+        <Typography variant="h5" align="center" className={styles.subHeading}>
           Skills
         </Typography>
         <div className={styles.skills}>

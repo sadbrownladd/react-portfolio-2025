@@ -12,12 +12,12 @@ const validationSchema = Yup.object({
 });
 
 export default function Contact() {
-  const { setTitle } = usePageTitle();
+  const { setPageTitle } = usePageTitle();
   const [alert, setAlert] = useState('');
 
   useEffect(() => {
-    setTitle('Contact');
-  }, [setTitle]);
+    setPageTitle('Contact');
+  }, [setPageTitle]);
 
   const formik = useFormik({
     initialValues: {
@@ -34,13 +34,11 @@ export default function Contact() {
   });
 
   return (
-    <Grid container spacing={2} className={styles.contact} sx={{ padding: '2rem', minHeight: '100vh', justifyContent: 'center', alignItems: 'center' }}>
-      <Grid>
-        <Typography variant="h4" align="center" gutterBottom className={styles.heading}>
+    <Grid container spacing={2} className={styles.container}>
+      <Grid item xs={12}>
+        <Typography variant="h4" align="center" className={styles.heading}>
           Contact
         </Typography>
-      </Grid>
-      <Grid sx={{ width: { xs: '90%', sm: '70%', md: '50%' } }}>
         <form onSubmit={formik.handleSubmit} className={styles.form}>
           <TextField
             fullWidth

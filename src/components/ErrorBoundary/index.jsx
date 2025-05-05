@@ -29,4 +29,4 @@ class ErrorBoundary extends Component {
   }
 }
 
-export default ErrorBoundary; // Ensure this line exists
+export default ErrorBoundary;
