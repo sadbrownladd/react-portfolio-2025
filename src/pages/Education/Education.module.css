@@ -17,22 +17,34 @@
 
 .skills {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   gap: 1rem;
-  flex-wrap: wrap;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .skill {
-  background: var(--highlight-color);
-  color: var(--btn-text);
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  animation: rotateIn 2s ease-out;
-  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
-.skill:hover {
-  transform: rotate(5deg);
+.skillName {
+  color: var(--text-color);
+}
+
+.progressBar {
+  background: #424242;
+  border-radius: 20px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  background: var(--highlight-color);
+  height: 100%;
+  width: 0;
+  animation: fillBar 1.5s ease-out forwards;
 }
 
 @media (max-width: 768px) {
