@@ -1,3 +1,44 @@
 .contact {
-    padding: 2rem;
+  background: var(--bg-color, #080808);
+  color: var(--text-color, white);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input {
+  background: #2a2a2a;
+  color: var(--text-color, white);
+}
+
+.submitButton {
+  background: var(--highlight-color, #00ffee);
+  color: var(--btn-custom-color, black);
+  border-radius: 50px;
+  box-shadow: 0 0 15px var(--highlight-color, #00ffee);
+  transition: box-shadow 0.3s ease;
+  margin-top: 1rem;
+}
+
+.submitButton:hover {
+  box-shadow: 0 0 30px var(--highlight-color, #00ffee);
+}
+
+.alert {
+  margin-top: 1rem;
+  color: green;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 1rem;
   }
+
+  .form {
+    width: 100%;
+  }
+}
