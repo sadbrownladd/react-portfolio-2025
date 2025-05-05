@@ -1,3 +1,41 @@
 .education {
-    padding: 2rem;
+  background: var(--bg-color, #0d0d0d);
+  color: var(--text-color, #e0e0e0);
+}
+
+.heading {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.subHeading {
+  animation: fadeIn 2s ease-in-out;
+  margin-top: 2rem;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.skill {
+  background: #1a1a1a;
+  color: var(--highlight-color, #00e6e6);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 2.5s ease-in-out;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px var(--highlight-color, #00e6e6);
+}
+
+@media (max-width: 768px) {
+  .education {
+    padding: 1rem;
   }
+}

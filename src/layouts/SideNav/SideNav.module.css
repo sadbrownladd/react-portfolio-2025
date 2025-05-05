@@ -1,0 +1,41 @@
+.list {
+    width: 250px;
+    background: var(--bg-color, #0d0d0d);
+    color: var(--text-color, #e0e0e0);
+    height: 100vh;
+    padding-top: 2rem;
+  }
+  
+  .listItem {
+    padding: 1rem 2rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .listItem:hover {
+    background: #1a1a1a;
+    transform: translateX(10px);
+  }
+  
+  .listItemText {
+    color: var(--highlight-color, #00e6e6);
+    font-weight: bold;
+  }
+  
+  .menuButton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    color: var(--highlight-color, #00e6e6);
+    transition: transform 0.3s ease;
+  }
+  
+  .menuButton:hover {
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 768px) {
+    .list {
+      width: 200px;
+    }
+  }

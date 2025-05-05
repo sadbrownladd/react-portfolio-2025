@@ -7,15 +7,19 @@ export default function CustomTable({ headers, rows }) {
       <TableHead>
         <TableRow>
           {headers.map((header) => (
-            <TableCell key={header}>{header}</TableCell>
+            <TableCell key={header} className={styles.headerCell}>
+              {header}
+            </TableCell>
           ))}
         </TableRow>
       </TableHead>
       <TableBody>
         {rows.map((row, index) => (
-          <TableRow key={index}>
+          <TableRow key={index} className={styles.row}>
             {headers.map((header) => (
-              <TableCell key={header}>{row[header]}</TableCell>
+              <TableCell key={header} className={styles.cell}>
+                {row[header]}
+              </TableCell>
             ))}
           </TableRow>
         ))}

@@ -1,4 +1,44 @@
 .home {
-    padding: 2rem;
-    text-align: center;
+  background: var(--bg-color, #0d0d0d);
+  color: var(--text-color, #e0e0e0);
+}
+
+.heading {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.subHeading {
+  animation: fadeIn 2s ease-in-out;
+  margin-top: 2rem;
+}
+
+.aboutText {
+  animation: fadeIn 2.5s ease-in-out;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  margin: 2rem auto;
+  display: block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.avatar:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px var(--highlight-color, #00e6e6);
+}
+
+@media (max-width: 768px) {
+  .home {
+    padding: 1rem;
   }
+
+  .avatar {
+    width: 120px;
+    height: 120px;
+  }
+}
