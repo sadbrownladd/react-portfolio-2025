@@ -1,0 +1,22 @@
+.header {
+    background-color: var(--primary-color);
+  }
+  
+  .title {
+    flex-grow: 1;
+  }
+  
+  .navLinks {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
