@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { PageTitleProvider } from './context/PageTitleContext';
 import Header from './layouts/Header';
-import Footer from './layouts/Footer';
+import SideNav from './layouts/SideNav';
 import Home from './pages/Home';
 import Education from './pages/Education';
 import Projects from './pages/Projects';
@@ -12,6 +12,7 @@ function App() {
   return (
     <PageTitleProvider>
       <Router>
+        <SideNav />
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -19,7 +20,6 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        <Footer />
       </Router>
     </PageTitleProvider>
   );

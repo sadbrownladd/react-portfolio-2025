@@ -1,0 +1,16 @@
+.list {
+    width: 250px;
+  }
+  
+  .menuButton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+  }
+  
+  @media (max-width: 768px) {
+    .list {
+      width: 200px;
+    }
+  }
