@@ -8,11 +8,17 @@ export default function SlideTransition({ children }) {
 
   useEffect(() => {
     if (ref.current) {
-      ref.current.classList.add(styles.animate);
-      const timer = setTimeout(() => {
-        ref.current.classList.remove(styles.animate);
-      }, 500);
-      return () => clearTimeout(timer);
+      const elements = ref.current.querySelectorAll('h3, h4, h5, h6, p, div, img');
+      elements.forEach((el, index) => {
+        el.style.animation = `slideDownFadeIn 0.5s ease-out ${index * 0.1}s forwards`;
+        el.style.opacity = '0';
+      });
+      return () => {
+        elements.forEach((el) => {
+          el.style.animation = '';
+          el.style.opacity = '';
+        });
+      };
     }
   }, [location.pathname]);
 
