@@ -1,6 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { PageTitleProvider } from './context/PageTitleContext';
 import Header from './layouts/Header';
+import Home from './pages/Home';
+import Education from './pages/Education';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
 import './index.css';
 
 function App() {
@@ -9,10 +13,10 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path="/" element={<div>Home Page</div>} />
-          <Route path="/education" element={<div>Education Page</div>} />
-          <Route path="/projects" element={<div>Projects Page</div>} />
-          <Route path="/contact" element={<div>Contact Page</div>} />
+          <Route path="/" element={<Home />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
     </PageTitleProvider>
