@@ -5,6 +5,7 @@
   --secondary-color: #6200ea;
   --btn-bg: #00e676;
   --btn-text: #121212;
+  --header-bg: #00695c;
 }
 
 body {
@@ -28,6 +29,7 @@ body {
   --secondary-color: #00e676;
   --btn-bg: #6200ea;
   --btn-text: #f0f4f8;
+  --header-bg: #00897b;
 }
 
 @keyframes pulse {
@@ -45,6 +47,16 @@ body {
   0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
   40% { transform: translateY(-10px); }
   60% { transform: translateY(-5px); }
+}
+
+@keyframes fillBar {
+  0% { width: 0; }
+  100% { width: var(--progress); }
+}
+
+@keyframes slideInFromRight {
+  0% { transform: translateX(100%); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
 }
 
 @media (max-width: 768px) {
