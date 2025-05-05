@@ -36,7 +36,7 @@ export default function Contact() {
   return (
     <Grid container spacing={2} className={styles.contact} sx={{ padding: '2rem', minHeight: '100vh', justifyContent: 'center', alignItems: 'center' }}>
       <Grid>
-        <Typography variant="h4" align="center" gutterBottom>
+        <Typography variant="h4" align="center" gutterBottom className={styles.heading}>
           Contact
         </Typography>
       </Grid>

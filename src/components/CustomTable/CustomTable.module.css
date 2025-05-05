@@ -1,3 +1,35 @@
 .table {
-    margin: 1rem 0;
+  margin: 1rem auto;
+  background: #1a1a1a;
+  color: var(--text-color, #e0e0e0);
+  border-radius: 8px;
+  width: 90%;
+  max-width: 800px;
+}
+
+.headerCell {
+  background: var(--highlight-color, #00e6e6);
+  color: #0d0d0d;
+  font-weight: bold;
+}
+
+.row {
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.row:hover {
+  transform: scale(1.02);
+  background: #2a2a2a;
+  box-shadow: 0 0 15px rgba(0, 230, 230, 0.3);
+}
+
+.cell {
+  color: var(--text-color, #e0e0e0);
+}
+
+@media (max-width: 768px) {
+  .table {
+    margin: 0.5rem auto;
+    width: 100%;
   }
+}

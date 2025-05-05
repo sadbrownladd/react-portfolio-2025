@@ -1,3 +1,41 @@
 .projects {
-    padding: 2rem;
+  background: var(--bg-color, #0d0d0d);
+  color: var(--text-color, #e0e0e0);
+}
+
+.heading {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.card {
+  background: #1a1a1a;
+  color: var(--text-color, #e0e0e0);
+  border: none;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 230, 230, 0.3);
+}
+
+.cardImage {
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.cardImage:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 1rem;
   }
+
+  .card {
+    margin-bottom: 1.5rem;
+  }
+}
