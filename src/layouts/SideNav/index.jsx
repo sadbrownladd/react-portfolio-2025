@@ -18,7 +18,13 @@ export default function SideNav() {
   return (
     <>
       {isMobile && (
-        <IconButton onClick={toggleDrawer} className={styles.menuButton}>
+        <IconButton
+          edge="start"
+          color="inherit"
+          aria-label="menu"
+          onClick={toggleDrawer}
+          className={styles.menuButton}
+        >
           <MenuIcon />
         </IconButton>
       )}
@@ -27,6 +33,7 @@ export default function SideNav() {
         open={open}
         onClose={toggleDrawer}
         variant={isMobile ? 'temporary' : 'permanent'}
+        sx={{ width: '250px', flexShrink: 0 }}
       >
         <List className={styles.list}>
           <ListItem button component={Link} to="/" onClick={toggleDrawer}>

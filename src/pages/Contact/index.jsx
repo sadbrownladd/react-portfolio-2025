@@ -1,17 +1,22 @@
-import { useState } from 'react';
-import styles from './Contact.module.css';
+import { Grid, Typography } from '@mui/material';
 import { usePageTitle } from '../../context/PageTitleContext';
-import CustomInput from '../../components/CustomInput';
+import { useEffect } from 'react';
+import styles from './Contact.module.css';
 
 export default function Contact() {
   const { setTitle } = usePageTitle();
-  setTitle('Contact');
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
+
+  useEffect(() => {
+    setTitle('Contact');
+  }, [setTitle]);
+
   return (
-    <div className={styles.contact}>
-      <CustomInput label="Name" value={name} onChange={(e) => setName(e.target.value)} />
-      <CustomInput label="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
-    </div>
+    <Grid container spacing={2} className={styles.contact} sx={{ padding: '2rem' }}>
+      <Grid>
+        <Typography variant="h4" align="center" gutterBottom>
+          Contact
+        </Typography>
+      </Grid>
+    </Grid>
   );
 }

@@ -1,5 +1,7 @@
 .list {
     width: 250px;
+    background: var(--bg-color, #080808);
+    color: var(--text-color, white);
   }
   
   .menuButton {
@@ -7,6 +9,7 @@
     top: 10px;
     left: 10px;
     z-index: 1;
+    color: var(--highlight-color, #00ffee);
   }
   
   @media (max-width: 768px) {

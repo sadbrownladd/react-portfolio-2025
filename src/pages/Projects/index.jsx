@@ -1,19 +1,22 @@
-import styles from './Projects.module.css';
+import { Grid, Typography } from '@mui/material';
 import { usePageTitle } from '../../context/PageTitleContext';
-import ProjectCard from '../../components/ProjectCard';
+import { useEffect } from 'react';
+import styles from './Projects.module.css';
 
 export default function Projects() {
   const { setTitle } = usePageTitle();
-  setTitle('Projects');
-  const projects = [
-    { title: 'Project 1', description: 'A React portfolio site' },
-    { title: 'Project 2', description: 'A simple CRUD app' },
-  ];
+
+  useEffect(() => {
+    setTitle('Projects');
+  }, [setTitle]);
+
   return (
-    <div className={styles.projects}>
-      {projects.map((project, index) => (
-        <ProjectCard key={index} title={project.title} description={project.description} />
-      ))}
-    </div>
+    <Grid container spacing={2} className={styles.projects} sx={{ padding: '2rem' }}>
+      <Grid>
+        <Typography variant="h4" align="center" gutterBottom>
+          Projects
+        </Typography>
+      </Grid>
+    </Grid>
   );
 }

@@ -1,3 +1,12 @@
 .education {
-    padding: 2rem;
+  padding: 2rem;
+  background: var(--bg-color, #080808);
+  color: var(--text-color, white);
+  min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .education {
+    padding: 1rem;
   }
+}
