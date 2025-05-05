@@ -1,21 +1,15 @@
-import { createContext, useContext, useState, useCallback } from 'react';
+import { createContext, useContext, useState } from 'react';
 
 const PageTitleContext = createContext();
 
 export function PageTitleProvider({ children }) {
-  const [title, setTitle] = useState('Home');
-
-  const updateTitle = useCallback((newTitle) => {
-    setTitle(newTitle);
-  }, []);
+  const [pageTitle, setPageTitle] = useState('Home');
 
   return (
-    <PageTitleContext.Provider value={{ title, setTitle: updateTitle }}>
+    <PageTitleContext.Provider value={{ pageTitle, setPageTitle }}>
       {children}
     </PageTitleContext.Provider>
   );
 }
 
-export function usePageTitle() {
-  return useContext(PageTitleContext);
-}
+export const usePageTitle = () => useContext(PageTitleContext);
