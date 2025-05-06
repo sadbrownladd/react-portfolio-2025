@@ -7,11 +7,11 @@
 }
 
 .heading {
-  animation: rotateIn 1s ease-out;
+  animation: slideDownFadeIn 1s ease-out;
 }
 
 .subHeading {
-  animation: rotateIn 1.5s ease-out;
+  animation: slideDownFadeIn 1.2s ease-out;
   margin: 2rem 0 1rem;
 }
 
@@ -21,6 +21,7 @@
   gap: 1rem;
   max-width: 600px;
   margin: 0 auto;
+  animation: slideDownFadeIn 1.4s ease-out;
 }
 
 .skill {
@@ -36,7 +37,7 @@
 .progressBar {
   background: #424242;
   border-radius: 20px;
-  height: 10px;
+  height: 12px;
   overflow: hidden;
 }
 
@@ -44,7 +45,13 @@
   background: var(--highlight-color);
   height: 100%;
   width: 0;
-  animation: fillBar 1.5s ease-out forwards;
+  animation: slipFlop 2s ease-out forwards;
+}
+
+@keyframes slipFlop {
+  0% { width: 0; }
+  80% { width: calc(var(--progress) * 1.15); }
+  100% { width: var(--progress); }
 }
 
 @media (max-width: 768px) {

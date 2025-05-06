@@ -5,7 +5,7 @@
   --secondary-color: #6200ea;
   --btn-bg: #00e676;
   --btn-text: #121212;
-  --header-bg: #00695c;
+  --header-bg: #424242;
 }
 
 body {
@@ -29,7 +29,7 @@ body {
   --secondary-color: #00e676;
   --btn-bg: #6200ea;
   --btn-text: #f0f4f8;
-  --header-bg: #00897b;
+  --header-bg: #e0e0e0;
 }
 
 @keyframes pulse {
@@ -49,14 +49,15 @@ body {
   60% { transform: translateY(-5px); }
 }
 
-@keyframes fillBar {
+@keyframes slipFlop {
   0% { width: 0; }
+  80% { width: calc(var(--progress) * 1.1); }
   100% { width: var(--progress); }
 }
 
-@keyframes slideInFromRight {
-  0% { transform: translateX(100%); opacity: 0; }
-  100% { transform: translateX(0); opacity: 1; }
+@keyframes slideDownFadeIn {
+  0% { transform: translateY(-20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
 }
 
 @media (max-width: 768px) {
