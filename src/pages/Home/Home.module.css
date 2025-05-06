@@ -28,17 +28,22 @@
 }
 
 .heading {
+  font-weight: bold;
   animation: slideDownFadeIn 1s ease-out;
 }
 
+.textHighlight {
+  color: var(--highlight-color);
+}
+
 .subHeading {
-  animation: slideDownFadeIn 1.2s ease-out;
   margin: 1rem 0;
+  animation: slideDownFadeIn 1.2s ease-out;
 }
 
 .description {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0 auto 1rem;
   animation: slideDownFadeIn 1.4s ease-out;
 }
 
@@ -80,4 +85,5 @@
   .container { padding: 1rem; }
   .avatar { width: 120px; height: 120px; }
   .heading { font-size: 1.8rem; }
+  .subHeading { font-size: 1.2rem; }
 }

@@ -24,6 +24,15 @@
   border: 1px solid var(--highlight-color);
 }
 
+.input :global(.MuiInputBase-input)::placeholder {
+  color: var(--text-color);
+  opacity: 0.7;
+}
+
+:global(.light-theme) .input :global(.MuiInputBase-input)::placeholder {
+  color: #424242;
+}
+
 .submitButton {
   background: var(--btn-bg);
   color: var(--btn-text);

@@ -6,7 +6,7 @@
 
 .title {
   flex-grow: 1;
-  animation: rotateIn 1s ease-out;
+  animation: slideDownFadeIn 1s ease-out;
 }
 
 .navLinks {
@@ -23,20 +23,20 @@
 }
 
 .link:hover {
-  color: #00e676;
+  color: var(--secondary-color);
   transform: translateY(-3px);
 }
 
 .active {
-  color: #00e676;
+  color: var(--secondary-color);
   font-weight: bold;
-  border-bottom: 2px solid #00e676;
+  border-bottom: 2px solid var(--secondary-color);
 }
 
 .themeToggle {
   display: flex;
   align-items: center;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   padding: 0.3rem;
   transition: background 0.3s ease;

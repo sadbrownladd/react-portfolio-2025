@@ -18,7 +18,13 @@ export default function Education() {
     { Degree: 'BS Computer Science', Institution: 'ITU', Year: '2023-2027' },
   ];
 
-  const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'Python'];
+  const skills = [
+    { name: 'HTML', progress: 90 },
+    { name: 'CSS', progress: 80 },
+    { name: 'JavaScript', progress: 75 },
+    { name: 'React', progress: 50 },
+    { name: 'Python', progress: 75 },
+  ];
 
   return (
     <Grid container spacing={2} className={styles.container}>
@@ -32,9 +38,17 @@ export default function Education() {
         </Typography>
         <div className={styles.skills}>
           {skills.map((skill, index) => (
-            <span key={index} className={styles.skill}>
-              {skill}
-            </span>
+            <div key={index} className={styles.skill}>
+              <Typography variant="body1" className={styles.skillName}>
+                {skill.name} ({skill.progress}%)
+              </Typography>
+              <div className={styles.progressBar}>
+                <div
+                  className={styles.progress}
+                  style={{ '--progress': `${skill.progress}%` }}
+                ></div>
+              </div>
+            </div>
           ))}
         </div>
       </Grid>
