@@ -1,5 +1,5 @@
 .header {
-  background: var(--bg-color);
+  background: var(--header-bg);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   padding: 1rem;
 }
@@ -11,7 +11,7 @@
 
 .navLinks {
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .link {
@@ -23,14 +23,14 @@
 }
 
 .link:hover {
-  color: var(--secondary-color);
+  color: #00e676;
   transform: translateY(-3px);
 }
 
 .active {
-  color: var(--secondary-color);
+  color: #00e676;
   font-weight: bold;
-  border-bottom: 2px solid var(--secondary-color);
+  border-bottom: 2px solid #00e676;
 }
 
 .themeToggle {
@@ -40,6 +40,7 @@
   border-radius: 20px;
   padding: 0.3rem;
   transition: background 0.3s ease;
+  margin-left: 2rem;
 }
 
 .themeIcon {
@@ -61,5 +62,8 @@
   }
   .title {
     font-size: 1.2rem;
+  }
+  .themeToggle {
+    margin-left: 1rem;
   }
 }

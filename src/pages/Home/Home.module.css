@@ -28,18 +28,18 @@
 }
 
 .heading {
-  animation: rotateIn 1s ease-out;
+  animation: slideDownFadeIn 1s ease-out;
 }
 
 .subHeading {
-  animation: rotateIn 1.5s ease-out;
+  animation: slideDownFadeIn 1.2s ease-out;
   margin: 1rem 0;
 }
 
 .description {
   max-width: 600px;
   margin: 0 auto;
-  animation: rotateIn 2s ease-out;
+  animation: slideDownFadeIn 1.4s ease-out;
 }
 
 .buttons {
@@ -47,6 +47,7 @@
   gap: 1rem;
   justify-content: center;
   margin: 1rem 0;
+  animation: slideDownFadeIn 1.6s ease-out;
 }
 
 .button {
@@ -63,6 +64,7 @@
   display: flex;
   justify-content: center;
   gap: 1rem;
+  animation: slideDownFadeIn 1.8s ease-out;
 }
 
 .socialIcon {
