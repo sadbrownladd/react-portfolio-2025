@@ -73,5 +73,4 @@ Below are the Screenshots of the preview of this website:
 ![localhost_5173_education (6)](https://github.com/user-attachments/assets/b9570b51-7f1b-4159-93b3-eb69cdc276c8)
 
 
-The website is deployed at : https://react-portfolio-2025-git-feature-enhance-sadbrownladds-projects.vercel.app/projects
-
+The website is deployed at : https://react-portfolio-2025-git-feature-enhance-sadbrownladds-projects.vercel.app/
