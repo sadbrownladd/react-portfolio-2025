@@ -42,3 +42,36 @@ ErrorBoundary for error handling.
 
 CSS Modules for scoped styling.
 
+Below are the Screenshots of the preview of this website:
+"Light Mode"
+-Home
+![localhost_5173_](https://github.com/user-attachments/assets/22987b0e-1bc0-4ffd-b6e0-3cc7835aa8ba)
+
+-Education
+![localhost_5173_education](https://github.com/user-attachments/assets/8e3d6c2a-81d9-411a-bf9d-10b69cb5dc15)
+
+-Projects
+![localhost_5173_education (1)](https://github.com/user-attachments/assets/5203268e-0a5f-499e-9d8c-06d7bce21df6)
+
+-Contact
+![localhost_5173_education (2)](https://github.com/user-attachments/assets/4edb0afe-93f2-499b-ac9f-f869e785a6be)
+
+----------------------------------------------------------------------------------------------------------------
+
+"Dark Mode"
+
+-Home
+![localhost_5173_education (3)](https://github.com/user-attachments/assets/7dd993a5-0b04-47fe-a1a6-a5904c346d52)
+
+-Education
+![localhost_5173_education (4)](https://github.com/user-attachments/assets/431855b0-8e1d-49e2-a775-6fe45aa667c2)
+
+-Projects
+![localhost_5173_education (5)](https://github.com/user-attachments/assets/774eb30a-0320-4746-8372-ddbe927296bc)
+
+-Contact
+![localhost_5173_education (6)](https://github.com/user-attachments/assets/b9570b51-7f1b-4159-93b3-eb69cdc276c8)
+
+
+The website is deployed at : https://react-portfolio-2025-git-feature-enhance-sadbrownladds-projects.vercel.app/projects
+
